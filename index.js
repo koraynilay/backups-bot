@@ -3,6 +3,7 @@ const fs = require('fs');
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
+const endec = require('./custom_modules/encode_decode/encode_decode.js');
 const config = require('./config.json');
 client.config = config;
 
@@ -32,4 +33,4 @@ fs.readdir("./commands/", (_err, files) => {
 });
 
 // Login
-client.login(config.token);
+client.login(endec.decode(config.token));

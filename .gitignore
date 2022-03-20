@@ -1,5 +1,9 @@
 # Node
 node_modules
+custom_modules
 
 # Config
 config.json
+
+package-lock.json
+timw_bcks
