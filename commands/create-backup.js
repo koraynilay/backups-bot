@@ -15,7 +15,7 @@ exports.run = async (client, message, args) => {
 	    backupData = await backup.create(message.guild, {
 				maxMessagesPerChannel: 99999999999,
 				saveImages: "base64"
-				/*jsonBeautify: true*/
+				//jsonBeautify: true
 	    })
 	    console.log("backup created");
 	    message.channel.send('Backup created! Here is your ID: `'+backupData.id+'`! Use `'+config.prefix+'load-backup '+backupData.id+'` to load the backup on another server!');
